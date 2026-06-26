@@ -328,7 +328,7 @@ class Interface extends React.Component {
                                     <FormattedMessage
                                         // eslint-disable-next-line max-len
                                         defaultMessage="{APP_NAME} is a TurboWarp mod with many changes that builds upon and enhances TurboWarp with many useful features. We do not guarantee projects made here will be backwards compatible with Scratch or TurboWarp."
-                                        description="Description of NitroBolt on the homepage"
+                                        description="Description of MagicMod on the homepage"
                                         id="tw.home.description"
                                         values={{
                                             APP_NAME
@@ -337,7 +337,7 @@ class Interface extends React.Component {
                                 </p>
                             </div>
                             <div className={styles.section}>
-                                <FeaturedProjects studio="27205657" />
+                                <FeaturedProjects studio="51739827" />
                             </div>
                         </React.Fragment>
                     ) : null}
