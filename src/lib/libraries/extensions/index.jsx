@@ -49,9 +49,10 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
-import nbIcon from './nb/nb.svg';
+import magicIcon from './magic/magic.svg';
 import customExtensionIcon from './custom/custom.svg';
 import galleryIconNB from './gallery/gallery-nb.svg';
+import galleryIconMagic from './gallery/gallery-magic.svg';
 import galleryIconTW from './gallery/gallery-tw.svg';
 import {APP_NAME} from '../../brand';
 
@@ -364,7 +365,7 @@ export default [
         name: (
             <FormattedMessage
                 defaultMessage="{APP_NAME} Blocks"
-                description="Name of the strange 'NitroBolt Blocks' extension"
+                description="Name of the strange 'MagicMod Blocks' extension"
                 id="tw.twExtension.name"
                 values={{
                     APP_NAME
@@ -372,11 +373,11 @@ export default [
             />
         ),
         extensionId: 'tw',
-        iconURL: nbIcon,
+        iconURL: magicIcon,
         description: (
             <FormattedMessage
                 defaultMessage="Weird new blocks."
-                description="Description of the strange 'NitroBolt Blocks' extension"
+                description="Description of the strange 'MagicMod Blocks' extension"
                 id="tw.twExtension.description"
             />
         ),
@@ -409,10 +410,10 @@ export default [
 
 const gallerySourceDisplay = {
     nitrobolt: {
-        name: 'NitroBolt Extension Gallery',
-        href: 'https://extensions.nitrobolt.org/',
-        iconURL: galleryIconNB,
-        tag: 'nb'
+        name: 'MagicMod Extension Gallery',
+        href: 'https://magic-mod.github.io/extensions/',
+        iconURL: galleryIconMagic,
+        tag: 'magic'
     },
     turbowarp: {
         name: 'TurboWarp Extension Gallery',
@@ -436,6 +437,11 @@ const createGalleryStatusItem = (sourceId, description) => {
 };
 
 export const galleryStatusItems = {
+    magicmod: {
+        loading: createGalleryStatusItem('magicmod', 'Loading MagicMod extension gallery...'),
+        more: createGalleryStatusItem('magicmod', 'Learn more about extensions at magic-mod.github.io/extensions.'),
+        error: createGalleryStatusItem('magicmod', 'Error loading MagicMod extension gallery. Visit magic-mod.github.io/extensions to find more extensions.')
+    },
     nitrobolt: {
         loading: createGalleryStatusItem('nitrobolt', 'Loading NitroBolt extension gallery...'),
         more: createGalleryStatusItem('nitrobolt', 'Learn more about extensions at extensions.nitrobolt.org.'),

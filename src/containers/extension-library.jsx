@@ -15,6 +15,12 @@ import extensionIcon from '../components/action-menu/icon--sprite.svg';
 
 const gallerySources = [
     {
+        id: 'magicmod',
+        baseURL: 'https://magic-mod.github.io/extensions/',
+        metadataURL: 'https://magic-mod.github.io/extensions/generated-metadata/extensions-v0.json',
+        tag: 'magic'
+    },
+    {
         id: 'nitrobolt',
         baseURL: 'https://extensions.nitrobolt.org/',
         metadataURL: 'https://extensions.nitrobolt.org/generated-metadata/extensions-v0.json',
