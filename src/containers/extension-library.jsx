@@ -21,12 +21,6 @@ const gallerySources = [
         tag: 'magic'
     },
     {
-        id: 'nitrobolt',
-        baseURL: 'https://extensions.nitrobolt.org/',
-        metadataURL: 'https://extensions.nitrobolt.org/generated-metadata/extensions-v0.json',
-        tag: 'nb'
-    },
-    {
         id: 'turbowarp',
         baseURL: 'https://extensions.turbowarp.org/',
         metadataURL: 'https://extensions.turbowarp.org/generated-metadata/extensions-v0.json',

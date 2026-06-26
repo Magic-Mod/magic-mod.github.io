@@ -52,7 +52,7 @@ import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 import magicIcon from './magic/magic.svg';
 import customExtensionIcon from './custom/custom.svg';
 import galleryIconNB from './gallery/gallery-nb.svg';
-import galleryIconMagic from './gallery/gallery-magic.svg';
+import galleryIconMagic from './gallery/gallery-magic.png';
 import galleryIconTW from './gallery/gallery-tw.svg';
 import {APP_NAME} from '../../brand';
 
@@ -382,7 +382,7 @@ export default [
             />
         ),
         incompatibleWithScratch: true,
-        tags: ['nb'],
+        tags: ['magic'],
         featured: true
     },
     {
@@ -402,14 +402,14 @@ export default [
                 id="tw.customExtension.description"
             />
         ),
-        tags: ['nb', 'tw'],
+        tags: ['magic', 'tw'],
         featured: true
         // Not marked as incompatible with Scratch so that clicking on it doesn't show a prompt
     }
 ];
 
 const gallerySourceDisplay = {
-    nitrobolt: {
+    magicmod: {
         name: 'MagicMod Extension Gallery',
         href: 'https://magic-mod.github.io/extensions/',
         iconURL: galleryIconMagic,
@@ -441,11 +441,6 @@ export const galleryStatusItems = {
         loading: createGalleryStatusItem('magicmod', 'Loading MagicMod extension gallery...'),
         more: createGalleryStatusItem('magicmod', 'Learn more about extensions at magic-mod.github.io/extensions.'),
         error: createGalleryStatusItem('magicmod', 'Error loading MagicMod extension gallery. Visit magic-mod.github.io/extensions to find more extensions.')
-    },
-    nitrobolt: {
-        loading: createGalleryStatusItem('nitrobolt', 'Loading NitroBolt extension gallery...'),
-        more: createGalleryStatusItem('nitrobolt', 'Learn more about extensions at extensions.nitrobolt.org.'),
-        error: createGalleryStatusItem('nitrobolt', 'Error loading NitroBolt extension gallery. Visit extensions.nitrobolt.org to find more extensions.')
     },
     turbowarp: {
         loading: createGalleryStatusItem('turbowarp', 'Loading TurboWarp extension gallery...'),

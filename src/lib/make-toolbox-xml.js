@@ -892,11 +892,11 @@ const myBlocks = function (isInitialSetup, isStage, targetId, colors) {
 };
 
 // eslint-disable-next-line max-len
-const nbBlocksColours = `colourmutprimary="#ff5726" colourmutsecondary="#f34b1a" colourmuttertiary="#e63e0d" colourmutquaternary="#e63e0d"`;
+const nbBlocksColours = `colourmutprimary="#FF26BA" colourmutsecondary="#F31A91" colourmuttertiary="#E60D72" colourmutquaternary="#E60D72"`;
 // eslint-disable-next-line max-len
-const extraNitroBoltBlocks = `
+const extraMagicModBlocks = `
 <block type="argument_reporter_boolean"><field name="VALUE">is compiled?</field><mutation ${nbBlocksColours}></mutation></block>
-<block type="argument_reporter_boolean"><field name="VALUE">is NitroBolt?</field><mutation ${nbBlocksColours}></mutation></block>
+<block type="argument_reporter_boolean"><field name="VALUE">is MagicMod?</field><mutation ${nbBlocksColours}></mutation></block>
 `;
 /* eslint-enable no-unused-vars */
 
@@ -956,11 +956,11 @@ const makeToolboxXML = function (vm, isInitialSetup, isStage = true, targetId, c
     const jsonXML = moveCategory('json') || json(colors.json);
     const myBlocksXML = moveCategory('procedures') || myBlocks(isInitialSetup, isStage, targetId, colors.more);
 
-    // Always display NitroBolt blocks as the first extension, if it exists,
+    // Always display MagicMod blocks as the first extension, if it exists,
     // and also add an "is compiled?" block to the top.
-    let nitroboltXML = moveCategory('tw'); // legacy id
-    if (nitroboltXML && !nitroboltXML.includes(extraNitroBoltBlocks)) {
-        nitroboltXML = nitroboltXML.replace('<block', `${extraNitroBoltBlocks}<block`);
+    let magicmodXML = moveCategory('tw'); // legacy id
+    if (magicmodXML && !magicmodXML.includes(extraMagicModBlocks)) {
+        magicmodXML = magicmodXML.replace('<block', `${extraMagicModBlocks}<block`);
     }
 
     const categoryEntries = [
@@ -986,8 +986,8 @@ const makeToolboxXML = function (vm, isInitialSetup, isStage = true, targetId, c
         ))
     ];
 
-    if (nitroboltXML) {
-        everything.push(gap, nitroboltXML);
+    if (magicmodXML) {
+        everything.push(gap, magicmodXML);
     }
 
     for (const extensionCategory of categoriesXML) {
@@ -1014,7 +1014,7 @@ makeToolboxXML.exports = {
     xmlOpen,
     xmlClose,
     nbBlocksColours,
-    extraNitroBoltBlocks,
+    extraMagicModBlocks,
 
     motion,
     looks,

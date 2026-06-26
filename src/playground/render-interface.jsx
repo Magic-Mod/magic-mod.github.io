@@ -89,7 +89,7 @@ const Footer = () => (
                 <FormattedMessage
                     // eslint-disable-next-line max-len
                     defaultMessage="{APP_NAME} is not affiliated with Scratch, the Scratch Team, or the Scratch Foundation."
-                    description="Disclaimer that NitroBolt is not connected to Scratch"
+                    description="Disclaimer that {APP_NAME} is not connected to Scratch"
                     id="tw.footer.disclaimer"
                     values={{
                         APP_NAME
@@ -128,45 +128,24 @@ const Footer = () => (
                     </a>
                 </div>
                 <div className={styles.footerSection}>
-                    <a href="https://desktop.nitrobolt.org/">
+                    <a href="https://desktop.turbowarp.org/">
                         {/* Do not translate */}
-                        {'NitroBolt Desktop'}
+                        {'TurboWarp Desktop'}
                     </a>
-                    <a href="https://packager.nitrobolt.org/">
+                    <a href="https://packager.turbowarp.org/">
                         {/* Do not translate */}
-                        {'NitroBolt Packager'}
+                        {'TurboWarp Packager'}
                     </a>
-                    <a href="https://docs.nitrobolt.org/website/embedding">
+                    <a href="https://docs.turbowarp.org/website/embedding">
                         <FormattedMessage
                             defaultMessage="Embedding"
                             description="Link in footer to embedding documentation for embedding link"
                             id="tw.footer.embed"
                         />
                     </a>
-                    <a href="https://docs.nitrobolt.org/website/url-parameters">
-                        <FormattedMessage
-                            defaultMessage="URL Parameters"
-                            description="Link in footer to URL parameters documentation"
-                            id="tw.footer.parameters"
-                        />
-                    </a>
-                    <a href="https://docs.nitrobolt.org/">
-                        <FormattedMessage
-                            defaultMessage="Documentation"
-                            description="Link in footer to additional documentation"
-                            id="tw.footer.documentation"
-                        />
-                    </a>
                 </div>
                 <div className={styles.footerSection}>
-                    <a href="https://scratch.mit.edu/users/CubesterYT/#comments">
-                        <FormattedMessage
-                            defaultMessage="Feedback & Bugs"
-                            description="Link to feedback/bugs page"
-                            id="tw.feedback"
-                        />
-                    </a>
-                    <a href="https://github.com/Nitro-Bolt/">
+                    <a href="https://github.com/Magic-Mod/">
                         <FormattedMessage
                             defaultMessage="Source Code"
                             description="Link to source code"
@@ -261,55 +240,7 @@ class Interface extends React.Component {
                             <div className={styles.section}>
                                 <ProjectInput />
                             </div>
-                            {(
-                                // eslint-disable-next-line max-len
-                                description.instructions === 'unshared' || description.credits === 'unshared'
-                            ) && (
-                                <div className={classNames(styles.infobox, styles.unsharedUpdate)}>
-                                    <p>
-                                        <FormattedMessage
-                                            defaultMessage="Unshared projects are no longer visible."
-                                            description="Appears on unshared projects"
-                                            id="tw.unshared2.1"
-                                        />
-                                    </p>
-                                    <p>
-                                        <FormattedMessage
-                                            defaultMessage="For more information, visit: {link}"
-                                            description="Appears on unshared projects"
-                                            id="tw.unshared.2"
-                                            values={{
-                                                link: (
-                                                    <a
-                                                        href="https://docs.turbowarp.org/unshared-projects"
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                    >
-                                                        {'https://docs.turbowarp.org/unshared-projects'}
-                                                    </a>
-                                                )
-                                            }}
-                                        />
-                                    </p>
-                                    <p>
-                                        <FormattedMessage
-                                            // eslint-disable-next-line max-len
-                                            defaultMessage="If the project was shared recently, this message may appear incorrectly for a few minutes."
-                                            description="Appears on unshared projects"
-                                            id="tw.unshared.cache"
-                                        />
-                                    </p>
-                                    <p>
-                                        <FormattedMessage
-                                            // eslint-disable-next-line max-len
-                                            defaultMessage="If this project is actually shared, please report a bug."
-                                            description="Appears on unshared projects"
-                                            id="tw.unshared.bug"
-                                        />
-                                    </p>
-                                </div>
-                            )}
-                            {hasCloudVariables && projectId !== '0' && (
+							{hasCloudVariables && projectId !== '0' && (
                                 <div className={styles.section}>
                                     <CloudVariableBadge />
                                 </div>
@@ -327,7 +258,7 @@ class Interface extends React.Component {
                                 <p>
                                     <FormattedMessage
                                         // eslint-disable-next-line max-len
-                                        defaultMessage="{APP_NAME} is a TurboWarp mod with many changes that builds upon and enhances TurboWarp with many useful features. We do not guarantee projects made here will be backwards compatible with Scratch or TurboWarp."
+                                        defaultMessage="{APP_NAME} is a mod of NitroBolt and TurboWarp with many changes that builds upon and enhances TurboWarp with many useful features. We do not guarantee projects made here will be backwards compatible with Scratch or TurboWarp."
                                         description="Description of MagicMod on the homepage"
                                         id="tw.home.description"
                                         values={{
@@ -337,7 +268,7 @@ class Interface extends React.Component {
                                 </p>
                             </div>
                             <div className={styles.section}>
-                                <FeaturedProjects studio="51739827" />
+                                <FeaturedProjects studio="33288318" />
                             </div>
                         </React.Fragment>
                     ) : null}

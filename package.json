@@ -96,7 +96,7 @@
     "scratch-blocks": "github:Nitro-Bolt/scratch-blocks#develop-builds",
     "scratch-paint": "github:Nitro-Bolt/scratch-paint#develop",
     "scratch-render": "github:Nitro-Bolt/scratch-render#develop",
-    "scratch-vm": "github:Nitro-Bolt/scratch-vm#develop",
+    "scratch-vm": "github:Magic-Mod/scratch-vm#develop",
     "style-loader": "^0.23.0",
 	"sweetalert2": "^11.12.3",
     "text-encoding": "0.7.0",
