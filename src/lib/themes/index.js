@@ -4,11 +4,15 @@ import * as accentPurple from './accent/purple';
 import * as accentBlue from './accent/blue';
 import * as accentRed from './accent/red';
 import * as accentOrange from './accent/orange';
+import * as accentMagenta from './accent/magenta';
 import * as accentRainbow from './accent/rainbow';
 import * as accentCustom from './accent/custom';
 
 import * as guiLight from './gui/light';
+import * as guiMagicLight from './gui/magic-light';
 import * as guiDark from './gui/dark';
+import * as guiMagicDark from './gui/magic-dark';
+import * as guiMidnight from './gui/midnight';
 
 import * as blocksThree from './blocks/three';
 import * as blocksHighContrast from './blocks/high-contrast';
@@ -18,6 +22,7 @@ const ACCENT_PURPLE = 'purple';
 const ACCENT_BLUE = 'blue';
 const ACCENT_RED = 'red';
 const ACCENT_ORANGE = 'orange';
+const ACCENT_MAGENTA = 'magenta';
 const ACCENT_RAINBOW = 'rainbow';
 const ACCENT_CUSTOM = 'custom';
 const ACCENT_MAP = {
@@ -25,18 +30,25 @@ const ACCENT_MAP = {
     [ACCENT_BLUE]: accentBlue,
     [ACCENT_RED]: accentRed,
     [ACCENT_ORANGE]: accentOrange,
+    [ACCENT_MAGENTA]: accentMagenta,
     [ACCENT_RAINBOW]: accentRainbow,
     [ACCENT_CUSTOM]: accentCustom
 };
-const ACCENT_DEFAULT = ACCENT_ORANGE;
+const ACCENT_DEFAULT = ACCENT_MAGENTA;
 
 const GUI_LIGHT = 'light';
+const GUI_MAGIC_LIGHT = 'magic-light';
 const GUI_DARK = 'dark';
+const GUI_MAGIC_DARK = 'magic-dark';
+const GUI_MIDNIGHT = 'midnight';
 const GUI_MAP = {
     [GUI_LIGHT]: guiLight,
-    [GUI_DARK]: guiDark
+    [GUI_MAGIC_LIGHT]: guiMagicLight,
+    [GUI_DARK]: guiDark,
+    [GUI_MAGIC_DARK]: guiMagicDark,
+    [GUI_MIDNIGHT]: guiMidnight
 };
-const GUI_DEFAULT = GUI_LIGHT;
+const GUI_DEFAULT = GUI_MAGIC_LIGHT;
 
 const BLOCKS_THREE = 'three';
 const BLOCKS_DARK = 'dark';
@@ -166,6 +178,7 @@ export {
     defaultBlockColors,
 
     ACCENT_ORANGE,
+    ACCENT_MAGENTA,
     ACCENT_RED,
     ACCENT_PURPLE,
     ACCENT_BLUE,
@@ -174,12 +187,15 @@ export {
     ACCENT_MAP,
 
     GUI_LIGHT,
+    GUI_MAGIC_LIGHT,
     GUI_DARK,
+    GUI_MAGIC_DARK,
+    GUI_MIDNIGHT,
     GUI_MAP,
-
+	
     BLOCKS_THREE,
     BLOCKS_DARK,
     BLOCKS_HIGH_CONTRAST,
     BLOCKS_CUSTOM,
-    BLOCKS_MAP
+    BLOCKS_MAP,
 };

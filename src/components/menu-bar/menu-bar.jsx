@@ -95,6 +95,7 @@ import editIcon from './icon--edit.svg';
 import addonsIcon from './addons.svg';
 import errorIcon from './tw-error.svg';
 
+import logo from './magicmod-logo.svg';
 import ninetiesLogo from './nineties_logo.svg';
 import catLogo from './cat_logo.svg';
 import prehistoricLogo from './prehistoric-logo.svg';
@@ -490,6 +491,18 @@ class MenuBar extends React.Component {
             >
                 <div className={styles.mainMenu}>
                     <div className={styles.fileGroup}>
+					 <div className={classNames(styles.menuBarItem)}>
+                            <img
+                                id="logo_img"
+                                alt="MagicMod"
+                                className={classNames(styles.scratchLogo, {
+                                    [styles.clickable]: typeof this.props.onClickLogo !== 'undefined'
+                                })}
+                                draggable={false}
+                                src={this.props.logo}
+                                onClick={this.props.onClickLogo}
+                            />
+                        </div>
                         {this.props.errors.length > 0 && <div>
                             <MenuLabel
                                 open={this.props.errorsMenuOpen}
@@ -1128,6 +1141,11 @@ MenuBar.propTypes = {
 };
 
 MenuBar.defaultProps = {
+    onShare: () => {}
+};
+
+MenuBar.defaultProps = {
+    logo: logo,
     onShare: () => {}
 };
 

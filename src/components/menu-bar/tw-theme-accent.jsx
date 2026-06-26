@@ -11,6 +11,7 @@ import {openCustomAccentModal} from '../../reducers/modals.js';
 import {MenuItem, MenuSection, Submenu} from '../menu/menu.jsx';
 import {
     ACCENT_ORANGE,
+    ACCENT_MAGENTA,
     ACCENT_RED,
     ACCENT_PURPLE,
     ACCENT_BLUE,
@@ -27,9 +28,14 @@ import styles from './settings-menu.css';
 import settingsIcon from '../menu-bar/icon--settings.svg';
 
 const options = defineMessages({
+    [ACCENT_MAGENTA]: {
+        defaultMessage: 'Magenta',
+        description: 'Name of the magenta color scheme, used by MagicMod by default.',
+        id: 'tw.accent.magenta'
+    },
     [ACCENT_ORANGE]: {
         defaultMessage: 'Orange',
-        description: 'Name of the orange color scheme, used by NitroBolt by default.',
+        description: 'Name of the orange color scheme.',
         id: 'tw.accent.orange'
     },
     [ACCENT_RED]: {

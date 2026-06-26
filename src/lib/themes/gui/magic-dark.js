@@ -1,23 +1,24 @@
+import { guiColors as lightGuiColors } from "./magic-light";
+
 const guiColors = {
+    ...lightGuiColors,
+
     'color-scheme': 'dark',
 
-    'ui-primary': '#111111',
-    'ui-secondary': '#1e1e1e',
-    'ui-tertiary': '#2e2e2e',
+    'ui-primary': '#1c1c1c',
+    'ui-secondary': '#1f1f1f',
+    'ui-tertiary': '#2f2f2f',
 
     'ui-modal-overlay': '#333333aa',
     'ui-modal-background': '#111111',
     'ui-modal-foreground': '#eeeeee',
-    'ui-modal-header-background': '#333333',
-    'ui-modal-header-foreground': '#ffffff',
 
     'ui-white': '#111111',
+    'progress-bar-outer': 'hsla(0, 100%, 100%, 0.25)',
 
     'ui-black-transparent': '#ffffff26',
 
     'text-primary': '#eeeeee',
-
-    'menu-bar-background': 'var(--looks-secondary-dark)',
 
     'assets-background': '#111111',
 
@@ -43,11 +44,20 @@ const guiColors = {
     'filter-icon-gray': 'grayscale(100%) brightness(1.7)',
     'filter-icon-white': 'brightness(0) invert(100%)',
 
-    'paint-filter-icon-gray': 'brightness(1.7)'
+    'paint-filter-icon-gray': 'brightness(0) invert(1)',
+	
+	'menu-bar-background': 'var(--looks-secondary-dark)',
+    'menu-bar-foreground': 'white',
+    'menu-bar-hover': '#fff2',
+    'progress-bar-outer': '#fff3',
+    'menu-bar-bottom-border': '#fff2',
+    'menu-bar-icon-filter': '',
+    'ui-modal-header-background': '#1f1f1f',
+    'ui-modal-header-foreground': 'white'
 };
 
 const blockColors = {
-    insertionMarker: '#cccccc',
+  insertionMarker: '#cccccc',
     workspace: '#1e1e1e',
     toolboxSelected: '#1e1e1e',
     toolboxText: '#cccccc',
@@ -57,9 +67,6 @@ const blockColors = {
     valueReportBackground: '#1e1e1e',
     valueReportBorder: '#333333',
     valueReportForeground: '#eeeeee',
-    errorReportBackground: '#2e1818',
-    errorReportBorder: '#552222',
-    errorReportForeground: '#eecccc',
     contextMenuBackground: '#111111',
     contextMenuBorder: '#ffffff26',
     contextMenuForeground: '#eeeeee',
@@ -71,8 +78,8 @@ const blockColors = {
     buttonBorder: '#c6c6c6',
     buttonActiveBackground: '#222222',
     buttonForeground: '#cccccc',
-    zoomIconFilter: 'invert(100%)',
-    gridColor: '#484848'
+    zoomIconFilter: 'invert(100%) grayscale(100%) brightness(140%)',
+    gridColor: '#484848',
 };
 
 export {

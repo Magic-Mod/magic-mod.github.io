@@ -161,6 +161,7 @@
     }
   },
   "overrides": {
+	"inflight": "^1.0.6",
     "webpack@4.47.0": {
       "terser-webpack-plugin": "^4.2.3"
     }

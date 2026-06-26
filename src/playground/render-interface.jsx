@@ -49,7 +49,7 @@ const isInvalidEmbed = window.parent !== window;
 
 const messages = defineMessages({
     defaultTitle: {
-        defaultMessage: 'Beyond Limitations', // TODO: Temporary?
+        defaultMessage: 'Where the Ultimate Challenge Comes to Life', // TODO: Temporary?
         description: 'Title of homepage',
         id: 'tw.guiDefaultTitle'
     }
