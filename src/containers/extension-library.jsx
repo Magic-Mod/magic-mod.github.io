@@ -21,6 +21,24 @@ const gallerySources = [
         tag: 'magic'
     },
     {
+        id: 'nitrobolt',
+        baseURL: 'https://extensions.nitrobolt.org/',
+        metadataURL: 'https://extensions.nitrobolt.org/generated-metadata/extensions-v0.json',
+        tag: 'nb'
+    },
+    {
+        id: 'mistium',
+        baseURL: 'https://extensions.mistium.com/',
+        metadataURL: 'https://extensions.mistium.com/generated-metadata/extensions-v0.json',
+        tag: 'mw'
+    },
+    {
+        id: 'astraeditor',
+        baseURL: 'https://editors.astras.top/extensions/',
+        metadataURL: 'https://editors.astras.top/extensions/generated-metadata/extensions-v0.json',
+        tag: 'ae'
+    },	
+    {
         id: 'turbowarp',
         baseURL: 'https://extensions.turbowarp.org/',
         metadataURL: 'https://extensions.turbowarp.org/generated-metadata/extensions-v0.json',

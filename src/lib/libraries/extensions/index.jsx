@@ -49,14 +49,35 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
-import magicIcon from './magic/magic.svg';
+import magicIcon from './magic/magic.png';
+import NBIcon from './nb/nb.svg';
 import customExtensionIcon from './custom/custom.svg';
 import galleryIconNB from './gallery/gallery-nb.svg';
+import galleryIconMW from './gallery/gallery-mw.png';
 import galleryIconMagic from './gallery/gallery-magic.png';
 import galleryIconTW from './gallery/gallery-tw.svg';
 import {APP_NAME} from '../../brand';
 
 export default [
+ {
+        name: 'App Utilities',
+        extensionId: 'appmaker',
+        iconURL: 'https://gaiamod-main.github.io/static/assets/ab0f9df0edc8698e6e01580a343b5423.svg',
+		insetIconURL: 'https://gaiamod-main.github.io/static/assets/7698093467c8a39f4d05107e7c979c06.svg',
+        tags: ['other'],
+		collaborator: 'LibreKitten',
+        description: 'Develop apps in MagicMod.',
+        featured: true
+    },
+	{
+        name: 'Wonder Blocks',
+        extensionId: 'wonderblocks',
+        iconURL: 'https://gaiamod-main.github.io/static/assets/d15b83f7ccb84bfb25f75775795977a2.png',
+        tags: ['other'],
+		collaborator: 'GaiaWindWave90',
+        description: 'Some mysterious blocks.',
+        featured: true
+    },
     {
         name: (
             <FormattedMessage
@@ -415,6 +436,24 @@ const gallerySourceDisplay = {
         iconURL: galleryIconMagic,
         tag: 'magic'
     },
+    nitrobolt: {
+        name: 'NitroBolt Extension Gallery',
+        href: 'https://extensions.nitrobolt.org/',
+        iconURL: galleryIconNB,
+        tag: 'nb'
+    },
+    mistium: {
+        name: 'Mistium\'s Extension Gallery',
+        href: 'https://extensions.mistium.com/',
+        iconURL: galleryIconMW,
+        tag: 'mw'
+    },
+    astraeditor: {
+        name: 'AstraEditor Extension Gallery',
+        href: 'https://editors.astras.top/extensions/',
+        iconURL: 'https://github.com/AstraEditor/scratch-gui/blob/develop/src/lib/libraries/extensions/gallery/aegallery.png?raw=true',
+        tag: 'ae'
+    },
     turbowarp: {
         name: 'TurboWarp Extension Gallery',
         href: 'https://extensions.turbowarp.org/',
@@ -441,6 +480,21 @@ export const galleryStatusItems = {
         loading: createGalleryStatusItem('magicmod', 'Loading MagicMod extension gallery...'),
         more: createGalleryStatusItem('magicmod', 'Learn more about extensions at magic-mod.github.io/extensions.'),
         error: createGalleryStatusItem('magicmod', 'Error loading MagicMod extension gallery. Visit magic-mod.github.io/extensions to find more extensions.')
+    },
+    nitrobolt: {
+        loading: createGalleryStatusItem('nitrobolt', 'Loading NitroBolt extension gallery...'),
+        more: createGalleryStatusItem('nitrobolt', 'Learn more about extensions at extensions.nitrobolt.org.'),
+        error: createGalleryStatusItem('nitrobolt', 'Error loading NitroBolt extension gallery. Visit extensions.nitrobolt.org to find more extensions.')
+    },
+    mistium: {
+        loading: createGalleryStatusItem('mistium', 'Loading Mistium extension gallery...'),
+        more: createGalleryStatusItem('mistium', 'Learn more about extensions at extensions.mistium.com.'),
+        error: createGalleryStatusItem('mistium', 'Error loading Mistium extension gallery. Visit extensions.mistium.com to find more extensions.')
+    },
+    astraeditor: {
+        loading: createGalleryStatusItem('astraeditor', 'Loading AstraEditor extension gallery...'),
+        more: createGalleryStatusItem('astraeditor', 'Learn more about extensions at editors.astras.top/extensions.'),
+        error: createGalleryStatusItem('astraeditor', 'Error loading AstraEditor extension gallery. Visit editors.astras.top/extensions to find more extensions.')
     },
     turbowarp: {
         loading: createGalleryStatusItem('turbowarp', 'Loading TurboWarp extension gallery...'),
