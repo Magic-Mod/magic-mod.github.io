@@ -58,6 +58,9 @@ import galleryIconMagic from './gallery/gallery-magic.png';
 import galleryIconTW from './gallery/gallery-tw.svg';
 import {APP_NAME} from '../../brand';
 
+import libraImage from './libra/Libra.png';
+import libraInsetImage from './libra/Libra-small.svg';
+
 export default [
  {
         name: 'App Utilities',
@@ -77,6 +80,26 @@ export default [
 		collaborator: 'GaiaWindWave90',
         description: 'Some mysterious blocks.',
         featured: true
+    },
+	{
+        name: 'Libra',
+        collaborator: 'Clipteam',
+        extensionId: 'libra',
+        iconURL: libraImage,
+        insetIconURL: libraInsetImage,
+        description: 'Libra Redlist extension.',
+        featured: true,
+		tags: ['other']
+    },
+	{
+        name: 'ClipCC Blocks',
+        collaborator: 'Clipteam',
+        extensionId: 'clipblocks',
+        iconURL: 'https://github.com/SoilZhu/clipcc-gui/blob/master/src/lib/libraries/extensions/clipcc/CCUnknownExtension.jpg?raw=true',
+		insetIconURL: 'https://raw.githubusercontent.com/SoilZhu/clipcc-gui/5005874fe09e4431c5c7b4c006fcfc80db4d0eb8/src/lib/libraries/extensions/clipcc/CCUnknownExtension.svg',
+        description: 'Clip Blocks extension.',
+        featured: true,
+		tags: ['other']
     },
     {
         name: (
@@ -442,6 +465,12 @@ const gallerySourceDisplay = {
         iconURL: galleryIconNB,
         tag: 'nb'
     },
+    sharkpool: {
+        name: 'SharkPool Extension Gallery',
+        href: 'https://sharkpools-extensions.vercel.app/',
+        iconURL: 'https://gaiamod-main.github.io/static/assets/93259f95026260bc06f83d29d3b89115.svg',
+        tag: 'sp'
+    },
     mistium: {
         name: 'Mistium\'s Extension Gallery',
         href: 'https://extensions.mistium.com/',
@@ -453,6 +482,12 @@ const gallerySourceDisplay = {
         href: 'https://editors.astras.top/extensions/',
         iconURL: 'https://github.com/AstraEditor/scratch-gui/blob/develop/src/lib/libraries/extensions/gallery/aegallery.png?raw=true',
         tag: 'ae'
+    },
+    bilup: {
+        name: 'Bilup Extension Gallery',
+        href: 'https://extensions.bilup.org/',
+        iconURL: 'https://editor.bilup.org/static/assets/5b5e7dd645a0e3891de6e5d937cca6a6.svg',
+        tag: 'bilup'
     },
     turbowarp: {
         name: 'TurboWarp Extension Gallery',
@@ -486,6 +521,11 @@ export const galleryStatusItems = {
         more: createGalleryStatusItem('nitrobolt', 'Learn more about extensions at extensions.nitrobolt.org.'),
         error: createGalleryStatusItem('nitrobolt', 'Error loading NitroBolt extension gallery. Visit extensions.nitrobolt.org to find more extensions.')
     },
+    sharkpool: {
+        loading: createGalleryStatusItem('sharkpool', 'Loading SharkPool extension gallery...'),
+        more: createGalleryStatusItem('sharkpool', 'Learn more about extensions at sharkpools-extensions.vercel.app.'),
+        error: createGalleryStatusItem('sharkpool', 'Error loading SharkPool extension gallery. Visit sharkpools-extensions.vercel.app to find more extensions.')
+    },
     mistium: {
         loading: createGalleryStatusItem('mistium', 'Loading Mistium extension gallery...'),
         more: createGalleryStatusItem('mistium', 'Learn more about extensions at extensions.mistium.com.'),
@@ -495,6 +535,11 @@ export const galleryStatusItems = {
         loading: createGalleryStatusItem('astraeditor', 'Loading AstraEditor extension gallery...'),
         more: createGalleryStatusItem('astraeditor', 'Learn more about extensions at editors.astras.top/extensions.'),
         error: createGalleryStatusItem('astraeditor', 'Error loading AstraEditor extension gallery. Visit editors.astras.top/extensions to find more extensions.')
+    },
+    bilup: {
+        loading: createGalleryStatusItem('bilup', 'Loading Bilup extension gallery...'),
+        more: createGalleryStatusItem('bilup', 'Learn more about extensions at extensions.bilup.org.'),
+        error: createGalleryStatusItem('bilup', 'Error loading Bilup extension gallery. Visit extensions.bilup.org to find more extensions.')
     },
     turbowarp: {
         loading: createGalleryStatusItem('turbowarp', 'Loading TurboWarp extension gallery...'),

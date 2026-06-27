@@ -39,6 +39,18 @@ const gallerySources = [
         tag: 'ae'
     },	
     {
+        id: 'bilup',
+        baseURL: 'https://extensions.bilup.org/',
+        metadataURL: 'https://extensions.bilup.org/generated-metadata/extensions-v0.json',
+        tag: 'bilup'
+    },	
+    {
+        id: 'sharkpool',
+        baseURL: 'https://sharkpools-extensions.vercel.app/',
+        metadataURL: 'https://sharkpools-extensions.vercel.app/Gallery%20Files/Extension-Keys.json',
+        tag: 'sp'
+    },		
+    {
         id: 'turbowarp',
         baseURL: 'https://extensions.turbowarp.org/',
         metadataURL: 'https://extensions.turbowarp.org/generated-metadata/extensions-v0.json',
