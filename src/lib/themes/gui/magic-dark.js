@@ -5,35 +5,37 @@ const guiColors = {
 
     'color-scheme': 'dark',
 
-    'ui-primary': '#1c1c1c',
-    'ui-secondary': '#1f1f1f',
-    'ui-tertiary': '#2f2f2f',
+    'ui-primary': '#000000',
+    'ui-secondary': '#0e0e0e',
+    'ui-tertiary': '#0F0F0F',
 
-    'ui-modal-overlay': '#333333aa',
-    'ui-modal-background': '#111111',
-    'ui-modal-foreground': '#eeeeee',
+    'ui-modal-overlay': 'var(--looks-secondary-dark)',
+    'ui-modal-background': 'black',
+    'ui-modal-foreground': 'white',
+    'ui-modal-header-background': 'black',
+    'ui-modal-header-foreground': 'var(--looks-secondary)',
 
-    'ui-white': '#111111',
+    'ui-white': '#000000',
     'progress-bar-outer': 'hsla(0, 100%, 100%, 0.25)',
 
     'ui-black-transparent': '#ffffff26',
 
-    'text-primary': '#eeeeee',
+    'text-primary': 'var(--looks-secondary)',
 
-    'assets-background': '#111111',
+    'assets-background': '#000000',
 
-    'input-background': '#1e1e1e',
+    'input-background': '#0F0F0F',
 
-    'popover-background': '#1e1e1e',
+    'popover-background': '#0F0F0F',
 
-    'badge-background': '#16202c',
-    'badge-border': '#203652',
+    'badge-background': '#2C1624',
+    'badge-border': '#52204B',
 
-    'fullscreen-background': '#111111',
-    'fullscreen-accent': '#111111',
+    'fullscreen-background': 'black',
+    'fullscreen-accent': 'var(--looks-secondary)',
 
-    'page-background': '#111111',
-    'page-foreground': '#eeeeee',
+    'page-background': 'black',
+    'page-foreground': 'var(--looks-secondary)',
 
     'project-title-inactive': 'var(--ui-secondary)',
     'project-title-hover': '#ffffff3f',
@@ -46,13 +48,13 @@ const guiColors = {
 
     'paint-filter-icon-gray': 'brightness(0) invert(1)',
 	
-	'menu-bar-background': 'var(--looks-secondary-dark)',
+	'menu-bar-background': 'black',
     'menu-bar-foreground': 'white',
     'menu-bar-hover': '#fff2',
     'progress-bar-outer': '#fff3',
     'menu-bar-bottom-border': '#fff2',
     'menu-bar-icon-filter': '',
-    'ui-modal-header-background': '#1f1f1f',
+    'ui-modal-header-background': 'black',
     'ui-modal-header-foreground': 'white'
 };
 
